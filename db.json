@@ -1,0 +1,95 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "MacBook Pro",
+      "price": 1000,
+      "image": "assets/macbook.jpg",
+      "configure": {
+        "chip": "M1",
+        "SSD": "256GB",
+        "RAM": "16GB",
+        "display": "13.3-inch Retina display"
+      },
+      "year": 2022
+    },
+    {
+      "id": 2,
+      "title": "MacBook Pro 13",
+      "price": 1200,
+      "image": "assets/macbook.jpg",
+      "configure": {
+        "chip": "M1",
+        "SSD": "512GB",
+        "RAM": "8GB",
+        "display": "13.3-inch Retina display"
+      },
+      "year": 2022
+    },
+    {
+      "id": 3,
+      "title": "MacBook Pro 16",
+      "price": 2000,
+      "image": "assets/macbook.jpg",
+      "configure": {
+        "chip": "Intel Core i7",
+        "SSD": "1TB",
+        "RAM": "32GB",
+        "display": "16-inch Retina display"
+      },
+      "year": 2022
+    },
+    {
+      "id": 4,
+      "title": "MacBook Pro 13 (M1 Pro)",
+      "price": 1500,
+      "image": "assets/macbook.jpg",
+      "configure": {
+        "chip": "M1 Pro",
+        "SSD": "512GB",
+        "RAM": "16GB",
+        "display": "13.3-inch ProMotion XDR display"
+      },
+      "year": 2023
+    },
+    {
+      "id": 5,
+      "title": "MacBook Pro 14",
+      "price": 1800,
+      "image": "assets/macbook.jpg",
+      "configure": {
+        "chip": "M2",
+        "SSD": "1TB",
+        "RAM": "16GB",
+        "display": "14.2-inch Liquid Retina XDR display"
+      },
+      "year": 2023
+    },
+    {
+      "id": 6,
+      "title": "MacBook Pro 15",
+      "price": 2500,
+      "image": "assets/macbook.jpg",
+      "configure": {
+        "chip": "Intel Core i9",
+        "SSD": "256GB",
+        "RAM": "64GB",
+        "display": "15.4-inch Retina display"
+      },
+      "year": 2023
+    },
+    {
+      "title": "Hii",
+      "price": "",
+      "year": "",
+      "image": "assets/macbook.jpg",
+      "configure": {
+        "chip": "",
+        "SSD": "",
+        "RAM": "",
+        "display": ""
+      },
+      "id": 7
+    }
+  ]
+}
