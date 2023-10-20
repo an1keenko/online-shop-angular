@@ -1,0 +1,33 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Title</mat-label>
+    <input matInput formControlName="title" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Price</mat-label>
+    <input matInput formControlName="title" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Year</mat-label>
+    <input matInput formControlName="title" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Chip</mat-label>
+    <input matInput formControlName="title" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>SSD</mat-label>
+    <input matInput formControlName="title" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>RAM</mat-label>
+    <input matInput formControlName="title" />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Display</mat-label>
+    <input matInput formControlName="title" />
+  </mat-form-field>
+
+  <button class="button" type="submit" mat-flat-button style="margin-right: 2px" color="primary">{{isNew ? 'Add product' : 'Update'}}</button>
+  <button class="button" type="button" (click)="onNoClick()" mat-flat-button color="primary">Cancel</button>
+</form>

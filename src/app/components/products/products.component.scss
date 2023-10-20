@@ -1,0 +1,26 @@
+.container {
+  margin: 0 auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-card {
+  background-color: #efefef;
+  color: black;
+  margin-right: 12px;
+  margin-bottom: 12px;
+}
+
+.button {
+  margin-right: 6px;
+}
+
+.image {
+  max-width: 300px;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
