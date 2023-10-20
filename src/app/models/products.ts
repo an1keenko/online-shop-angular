@@ -7,8 +7,8 @@ export interface IProducts {
     quantity: number;
     configure: {
       chip: string,
-      SSD: string,
-      RAM: string,
+      memory: string,
+      ssd: string,
       display: string,
     }
 

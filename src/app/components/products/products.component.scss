@@ -1,20 +1,25 @@
 .container {
   margin: 0 auto 0;
+  padding-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
+mat-toolbar-row {
+  background-color: aliceblue;
+}
+
 mat-card {
-  background-color: #efefef;
+  background-color: white;
   color: black;
-  margin-right: 12px;
-  margin-bottom: 12px;
+  margin: 12px;
 }
 
 .button {
   margin-right: 6px;
+  background-color: #70705b;
 }
 
 .image {
@@ -23,4 +28,15 @@ mat-card {
 
 .example-spacer {
   flex: 1 1 auto;
+}
+
+.title {
+  padding: 24px 24px 0;
+}
+
+.actions {
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

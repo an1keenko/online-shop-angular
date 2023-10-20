@@ -1,18 +1,18 @@
 <div class="container">
     <mat-card *ngFor="let item of basket">
-        <mat-card-title>{{item.title}}</mat-card-title>
+        <mat-card-title class="title">{{item.title}}</mat-card-title>
         <img class="image" mat-card-image src="{{item.image}}" alt="{{item.title}}"/>
         <mat-card-content>
             <p>Price: {{item.price | currency: 'USD'}}</p>
             <p>Year: {{item.year}}</p>
             <p>Chip: {{item.configure.chip}}</p>
-            <p>Chip: {{item.configure.display}}</p>
-            <p>Chip: {{item.configure.RAM}}</p>
-            <p>Chip: {{item.configure.SSD}}</p>
+            <p>Display: {{item.configure.display}}</p>
+            <p>Memory: {{item.configure.memory}}</p>
+            <p>SSD: {{item.configure.ssd}}</p>
         </mat-card-content>
-        <mat-card-actions>
+        <mat-card-actions class="actions">
             <button class="button" mat-flat-button color="primary" (click)="minusItemFromBasket(item)">-</button>
-            <p>Amount: {{item.quantity}}</p>
+            <p class="amount">Amount: {{item.quantity}}</p>
             <button class="button" mat-flat-button color="primary" (click)="plusItemFromBasket(item)">+</button>
         </mat-card-actions>
     </mat-card>

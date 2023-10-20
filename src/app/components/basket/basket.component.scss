@@ -1,5 +1,5 @@
 .container {
-  margin: 0 auto 0;
+  margin: 24px auto 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -7,16 +7,31 @@
 }
 
 mat-card {
-  background-color: #efefef;
+  background-color: white;
   color: black;
-  margin-right: 12px;
-  margin-bottom: 12px;
+  margin: 12px;
+}
+
+.title {
+  padding: 24px 24px 0;
+}
+
+.actions {
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
   margin-right: 6px;
+  background-color: #70705b;
 }
 
 .image {
   max-width: 300px;
+}
+
+.amount {
+    margin: 0 12px;
 }

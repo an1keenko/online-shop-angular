@@ -1,32 +1,32 @@
-import {Component, Inject} from '@angular/core';
-import {MAT_DIALOG_DATA, MatDialogRef} from "@angular/material/dialog";
-import {FormControl, FormGroup} from "@angular/forms";
+import { Component, Inject, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-dialog-box',
   templateUrl: './dialog-box.component.html',
   styleUrls: ['./dialog-box.component.scss']
 })
-export class DialogBoxComponent {
+export class DialogBoxComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<DialogBoxComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
   ) {
-    if (this.data) this.isNew = false
+    if (this.data) this.isNew = false;
   }
 
   myForm: FormGroup = new FormGroup({
     id: new FormControl(this.data?.id ?? null),
-    title: new FormControl(this.data?.title ?? null),
-    price: new FormControl(this.data?.price ?? null),
-    year: new FormControl(this.data?.year ?? null),
-    chip: new FormControl(this.data?.configure?.chip ?? null),
-    SSD: new FormControl(this.data?.configure?.SSD ?? null),
-    RAM: new FormControl(this.data?.configure?.RAM ?? null),
-    display: new FormControl(this.data?.configure?.display ?? null),
+    title: new FormControl(this.data?.title ?? ''),
+    price: new FormControl(this.data?.price ?? ''),
+    year: new FormControl(this.data?.year ?? ''),
+    chip: new FormControl(this.data?.chip ?? ''),
+    ssd: new FormControl(this.data?.ssd ?? ''),
+    memory: new FormControl(this.data?.memory ?? ''),
+    display: new FormControl(this.data?.display ?? ''),
   });
 
-  isNew: boolean = true
+  isNew: boolean = true;
 
   onNoClick(): void {
     this.dialogRef.close(null);
@@ -38,14 +38,15 @@ export class DialogBoxComponent {
       title: this.myForm.value.title,
       price: this.myForm.value.price,
       year: this.myForm.value.year,
-      image: "assets/macbook.jpg",
+      image: "assets/macbook.jpeg",
       configure: {
         chip: this.myForm.value.chip,
-        SSD: this.myForm.value.SSD,
-        RAM: this.myForm.value.RAM,
+        ssd: this.myForm.value.ssd,
+        memory: this.myForm.value.memory,
         display: this.myForm.value.display,
-       }
-    }
+      }
+    };
+
     this.dialogRef.close(this.data);
   }
 
@@ -53,5 +54,4 @@ export class DialogBoxComponent {
 
   }
 
-  protected readonly onsubmit = onsubmit;
 }

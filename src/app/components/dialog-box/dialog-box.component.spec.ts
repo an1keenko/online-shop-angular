@@ -6,10 +6,14 @@ describe('DialogBoxComponent', () => {
   let component: DialogBoxComponent;
   let fixture: ComponentFixture<DialogBoxComponent>;
 
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      declarations: [ DialogBoxComponent ]
+    })
+    .compileComponents();
+  });
+
   beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [DialogBoxComponent]
-    });
     fixture = TestBed.createComponent(DialogBoxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

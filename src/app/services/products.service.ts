@@ -1,6 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {IProducts} from "../models/products";
+import { IProducts } from '../models/products';
 
 @Injectable({
   providedIn: 'root'
@@ -8,41 +8,43 @@ import {IProducts} from "../models/products";
 export class ProductsService {
   url: string = 'http://localhost:3000/products';
   urlBasket: string = 'http://localhost:3000/basket';
+
   constructor(private http: HttpClient) { }
 
   getProducts() {
-    return this.http.get<IProducts[]>(this.url)
+    return this.http.get<IProducts[]>(this.url);
   }
 
   getProduct(id: number) {
-    return this.http.get<IProducts>(`${this.url}/${id}`)
+    return this.http.get<IProducts>(`${this.url}/${id}`);
   }
 
   postProduct(product: IProducts) {
-    return this.http.post<IProducts>(this.url, product)
+    return this.http.post<IProducts>(this.url, product);
   }
 
   deleteProduct(id: number) {
-    return this.http.delete<IProducts>(`${this.url}/${id}`)
+    return this.http.delete<any>(`${this.url}/${id}`);
   }
 
   updateProduct(product: IProducts) {
-    return this.http.put<IProducts>(`${this.url}/${product.id}`, product)
+    return this.http.put<IProducts>(`${this.url}/${product.id}`, product);
   }
 
   postProductToBasket(product: IProducts) {
-    return this.http.post<IProducts>(this.urlBasket, product)
+    return this.http.post<IProducts>(this.urlBasket, product);
   }
 
   getProductFromBasket() {
-    return this.http.get<IProducts[]>(this.urlBasket)
+    return this.http.get<IProducts[]>(this.urlBasket);
   }
 
   updateProductToBasket(product: IProducts) {
-    return this.http.put<IProducts>(`${this.urlBasket}/${product.id}`, product)
+    return this.http.put<IProducts>(`${this.urlBasket}/${product.id}`, product);
   }
 
-  removeProductFromBasket(id: number) {
-    return this.http.delete<IProducts>(`${this.urlBasket}/${id}`)
+
+ removeProductFromBasket(id: number) {
+    return this.http.delete<IProducts>(`${this.urlBasket}/${id}`);
   }
 }

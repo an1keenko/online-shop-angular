@@ -2,45 +2,139 @@
   "products": [
     {
       "id": 1,
-      "title": "MacBook Pro",
-      "price": 1000,
-      "image": "assets/macbook.jpg",
+      "title": "MacBook Air",
+      "price": 999,
+      "year": 2022,
+      "image": "assets/macbook.jpeg",
       "configure": {
         "chip": "M1",
-        "SSD": "256GB",
-        "RAM": "16GB",
-        "display": "13.3-inch Retina display"
-      },
-      "year": 2022
+        "ssd": "256GB",
+        "memory": "8GB",
+        "display": "13-inch Retina"
+      }
     },
     {
       "id": 2,
-      "title": "a",
-      "price": null,
-      "year": null,
-      "image": "assets/macbook.jpg",
+      "title": "MacBook Pro 14-inch",
+      "price": 1299,
+      "year": 2022,
+      "image": "assets/macbook.jpeg",
       "configure": {
-        "chip": null,
-        "SSD": null,
-        "RAM": null,
-        "display": null
+        "chip": "M1 Pro",
+        "ssd": "512GB",
+        "memory": "16GB",
+        "display": "14-inch Retina"
+      }
+    },
+    {
+      "id": 3,
+      "title": "MacBook Pro 16-inch",
+      "price": 2399,
+      "year": 2022,
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "M1 Max",
+        "ssd": "1TB",
+        "memory": "32GB",
+        "display": "16-inch Retina"
+      }
+    },
+    {
+      "id": 4,
+      "title": "MacBook Air",
+      "price": 1099,
+      "year": 2023,
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "M2",
+        "ssd": "512GB",
+        "memory": "16GB",
+        "display": "14-inch Retina"
+      }
+    },
+    {
+      "id": 5,
+      "title": "MacBook Pro 14-inch",
+      "price": 1599,
+      "year": 2023,
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "M2 Pro",
+        "ssd": "1TB",
+        "memory": "32GB",
+        "display": "14-inch Retina"
+      }
+    },
+    {
+      "id": 6,
+      "title": "MacBook Pro 16-inch",
+      "price": 2799,
+      "year": 2023,
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "M2 Max",
+        "ssd": "2TB",
+        "memory": "64GB",
+        "display": "16-inch Retina"
       }
     }
   ],
   "basket": [
     {
       "id": 1,
-      "title": "MacBook Pro",
-      "price": 1000,
-      "image": "assets/macbook.jpg",
+      "title": "MacBook Air",
+      "price": 999,
+      "year": 2022,
+      "image": "assets/macbook.jpeg",
       "configure": {
         "chip": "M1",
-        "SSD": "256GB",
-        "RAM": "16GB",
-        "display": "13.3-inch Retina display"
+        "ssd": "256GB",
+        "memory": "8GB",
+        "display": "13-inch Retina"
       },
+      "quantity": 3
+    },
+    {
+      "id": 2,
+      "title": "MacBook Pro 14-inch",
+      "price": 1299,
       "year": 2022,
-      "quantity": 13
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "M1 Pro",
+        "ssd": "512GB",
+        "memory": "16GB",
+        "display": "14-inch Retina"
+      },
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "title": "MacBook Air",
+      "price": 1099,
+      "year": 2023,
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "M2",
+        "ssd": "512GB",
+        "memory": "16GB",
+        "display": "14-inch Retina"
+      },
+      "quantity": 5
+    },
+    {
+      "id": 6,
+      "title": "MacBook Pro 16-inch",
+      "price": 2799,
+      "year": 2023,
+      "image": "assets/macbook.jpeg",
+      "configure": {
+        "chip": "M2 Max",
+        "ssd": "2TB",
+        "memory": "64GB",
+        "display": "16-inch Retina"
+      },
+      "quantity": 1
     }
   ]
 }

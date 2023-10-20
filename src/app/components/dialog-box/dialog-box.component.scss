@@ -7,3 +7,19 @@
 .example-full-width {
   width: 100%;
 }
+
+.actions {
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin-right: 6px;
+  background-color: #70705b;
+}
+
+mat-form-field {
+  color: #70705b;
+}

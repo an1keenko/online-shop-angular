@@ -1,19 +1,19 @@
 <div class="container">
   <mat-toolbar color="primary" *ngIf="canEdit">
     <mat-toolbar-row>
-      <span class="example-spacer">Example</span>
+      <span class="example-spacer"></span>
       <button class="button" mat-flat-button color="basic" (click)="openDialog( )">Add product</button>
     </mat-toolbar-row>
   </mat-toolbar>
   <mat-card *ngFor="let product of products">
-    <mat-card-title>{{product.title}}</mat-card-title>
+    <mat-card-title class="title">{{product.title}}</mat-card-title>
     <img class="image" mat-card-image src="{{product.image}}" alt="{{product.title}}"/>
     <mat-card-content>
       <p>Price: {{product.price | currency: 'USD'}}</p>
       <p>Chip: {{product.configure.chip}}</p>
       <p>Year: {{product.year}}</p>
     </mat-card-content>
-    <mat-card-actions>
+    <mat-card-actions class="actions">
       <button class="button" mat-flat-button color="primary" (click)="addToBasket(product)">To basket</button>
       <button class="button" mat-flat-button color="primary" routerLink="{{product.id}}">About</button>
       <button class="button" mat-flat-button color="primary" [matMenuTriggerFor]="menu">Edit</button>
