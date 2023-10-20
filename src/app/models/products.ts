@@ -1,9 +1,10 @@
 export interface IProducts {
-    id?: number;
+    id: number;
     title: string;
     price: number;
     image?: string;
     year: number;
+    quantity: number;
     configure: {
       chip: string,
       SSD: string,
