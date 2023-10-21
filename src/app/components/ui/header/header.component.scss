@@ -3,7 +3,7 @@
 }
 
 mat-toolbar {
-  background-color: #70705b;
+  background-color: #424242;
 }
 
 .toolbar {
@@ -12,6 +12,7 @@ mat-toolbar {
 
   &.button {
     margin-left: 6px ;
+    background-color: #6D6D6D;
     &:first-child{
       margin-left: 0;
     }
